@@ -171,6 +171,53 @@
         background-color: white;
         white-space: nowrap;
         box-shadow: 5px 5px 15px 5px lightgrey;
+        animation: opacity 1s both;
+    }
+
+    @keyframes opacity {
+
+        0% {
+            transform: scale(0);
+            transform-origin: 50% 0%;
+            opacity: 0;
+        }
+
+        100% {
+            transform: scale(1);
+            transform-origin: 50% 0%;
+            opacity: 1;
+        }
+    }
+
+    #case-1 {
+        animation-delay: 0.1s;
+    }
+    #case-2 {
+        animation-delay: 0.2s;
+    }
+    #case-3 {
+        animation-delay:  0.3s;
+    }
+    #case-4 {
+        animation-delay:  0.4s;
+    }
+    #case-5 {
+        animation-delay:  0.5s;
+    }
+    #case-6 {
+        animation-delay:  0.6s;
+    }
+    #case-7 {
+        animation-delay:  0.7s;
+    }
+    #case-8 {
+        animation-delay:  0.8s;
+    }
+    #case-9 {
+        animation-delay:  0.9s;
+    }
+    #case-10 {
+        animation-delay: 1s;
     }
 
     .menu-1:hover .zone-text h3 {
