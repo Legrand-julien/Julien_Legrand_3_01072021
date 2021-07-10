@@ -73,6 +73,61 @@
         font-family: 'Shrikhand', cursive;
     }
 
+    .heart-icon {
+
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        fill: transparent;
+        stroke: black;
+        stroke-width: 35;
+        cursor: pointer;
+        position: relative;
+    }
+
+    svg {
+
+        overflow: visible;
+        width: 25px;
+    }
+
+    .heart-main:hover path {
+        animation: stroke-color-animation 0.6s ease-in both;
+    }
+
+    @keyframes stroke-color-animation {
+        
+        0% {
+            stroke: 100%;
+            stroke-opacity: 1;
+        }
+
+        25%{
+            stroke: 75%;
+            transform: scale(1);
+            stroke-opacity: 0.75;
+        }
+        
+        50%{
+            stroke: 50%;
+            transform: scale(1);
+            stroke-opacity: 0.5;
+        }
+
+        75% {
+            stroke: 25%;
+            transform: scale(1);
+            stroke-opacity: 0.25;
+        }
+
+        100% {
+            stroke: 0%;
+            transform: scale(1);
+            stroke-opacity: 0;
+            fill: url(#mygradient)
+        }
+    }
+
     .title-menu {
 
         margin-left: 10px;
