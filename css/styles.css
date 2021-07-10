@@ -19,7 +19,7 @@
         margin: auto;
         position: fixed;
         top: 0; right: 0; bottom: 0; left: 0;
-        z-index: 1;
+        z-index: 2;
         visibility: hidden;
         background: white;
         animation: background-spinner 2s linear;
@@ -357,13 +357,59 @@
         margin: 0px 0px 0px 5px;
     }
 
-    .heart {
+    .heart-icon {
 
         display: flex;
         align-items: center;
-        font-size: 22px;
-        margin-right: 20px;
-        text-decoration: none;
+        margin-right: 15px;
+        fill: transparent;
+        stroke: black;
+        stroke-width: 35;
+        cursor: pointer;
+        position: relative;
+    }
+
+    svg {
+
+        overflow: visible;
+        width: 25px;
+    }
+
+    .heart-main:hover path {
+        animation: stroke-color-animation 0.6s ease-in both;
+    }
+
+    @keyframes stroke-color-animation {
+        
+        0% {
+            stroke: 100%;
+            stroke-opacity: 1;
+        }
+
+        25%{
+            stroke: 75%;
+            transform: scale(1);
+            stroke-opacity: 0.75;
+        }
+        
+        50%{
+            stroke: 50%;
+            transform: scale(1);
+            stroke-opacity: 0.5;
+        }
+
+        75% {
+            stroke: 25%;
+            transform: scale(1);
+            stroke-opacity: 0.25;
+        }
+
+        100% {
+            stroke: 0%;
+            transform: scale(1);
+            stroke-opacity: 0;
+            fill: url(#mygradient)
+        }
     }
 
     
