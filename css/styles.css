@@ -10,74 +10,76 @@
         text-decoration: none;
         color: black
     }
-/* SPINNNER */
+    
+/* SPINNER */
 
     .background-spinner {
 
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        position: fixed;
-        top: 0; right: 0; bottom: 0; left: 0;
-        z-index: 2;
-        visibility: hidden;
-        background: white;
-        animation: background-spinner 2s linear;
+    width: 100%;
+    height: 100%;
+    background: white;
+    margin:  auto;
+    position: fixed;
+    top: 0; bottom: 0; right: 0; left: 0;
+    z-index: 2;
+    animation: background-spinner 2s linear;
+    visibility: hidden;
     }
 
-    .spinner {
-
-        border: 10px solid transparent;
-        border-top: 10px solid #9356DC;
-        border-bottom: 10px solid #FF79DA;
-        border-radius: 50%;
-        margin: auto;
-        width: 100px;
-        height: 100px;
-        position: fixed;
-        top: 0; right: 0; bottom: 0; left: 0;
-        opacity: 1;
-        animation: rotate 2s linear infinite;
-    }
+    .spinner{
+    
+    border: 10px solid transparent;
+    border-top: 10px solid #9356DC;
+    border-bottom: 10px  solid #FF79DA;
+    border-radius: 50%;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 0; right: 0; bottom: 0; top: 0;
+    animation: rotate 1.5s linear infinite;
+    opacity: 1;
+}
 
     .dot-spinner {
 
-        border: 10px solid #99E2D0;
-        background-color: #99E2D0;
-        width: 1px;
-        height: 1px;
-        border-radius: 50%;
-        margin: auto;
-        position: fixed;
-        top: 0; right: 0; bottom: 0; left: 0;
-    }
+    border: 10px solid #99E2D0;
+    background-color: #99E2D0;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    margin: auto;
+    position: fixed;
+    left: 0; right: 0; top: 0; bottom: 0;
+}
 
     @keyframes background-spinner {
-        0%{
-            visibility: visible;
-            opacity: 0.8;
-        }
-        
-        50%{
-            visibility: visible;
-            opacity: 0.6;
-        }
-
-        100%{
-            visibility: hidden;
-            opacity: 0;
-        }
+    0%{
+        visibility: visible;
+        opacity: 0.9;
     }
 
+    50%{
+        visibility: visible;
+        opacity: 0.9;
+    }
+    
+    100%{
+        visibility: hidden;
+        opacity: 0;
+    }  
+}
+
     @keyframes rotate {
+    0%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
 
-        0%{
-            transform: rotate(0deg);
-        }
-
-        100%{
-            transform: rotate(360deg);
-        }
+    100% {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
     }
 
 /* HEADER */
@@ -164,7 +166,7 @@
         width: 220px;
         height: 50px;
         border-radius: 30px;
-        background: linear-gradient(180deg, #ff79da 0% ,#9356dc);
+        background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
         color: white;
         font-size: 16px;
         font-weight: 600;
@@ -177,6 +179,7 @@
 
         opacity: 85%;
         box-shadow: 1px 1px 15px 1px lightslategray;
+        animation: shadow 0.5s ease-in both;
     }
 
 /* Functions */
@@ -191,7 +194,7 @@
 
     .function h2 {
 
-        width: 295px;
+        width: 90%;
         padding-left: 20px;
     }
 
@@ -199,6 +202,7 @@
 
         display: flex;
         flex-direction: column;
+        width: 98%;
     }
 
     .function-step {
@@ -209,16 +213,31 @@
         align-items: center;
         margin: 10px 10px 10px 18px;
         border-radius: 20px;
-        width: 270px;
+        width: 90%;
         height: 70px;
         box-shadow: 2px 3px 5px lightgray;
     }
-
+    
     .function-step:hover {
 
         background-color: #efe3ff;
         opacity: 80%;
         box-shadow: 1px 1px 15px 1px lightslategray;
+        animation: shadow 0.5s ease-in both;  
+    }
+
+    @keyframes shadow {
+
+        0% {
+
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
+
+        100% {
+
+            box-shadow: 0 0 20px 0px lightslategray;
+        }
+        
     }
 
     .function-step:hover > .icon {
@@ -291,6 +310,7 @@
     .restaurant-card:hover {
 
         box-shadow: 1px 1px 15px 3px #efe3ff;
+        animation: shadow 0.5s ease-in both;
     }
 
     .new {
