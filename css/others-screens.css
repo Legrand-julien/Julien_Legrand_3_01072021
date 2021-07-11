@@ -1,4 +1,4 @@
-@media all and (min-width: 481px) {
+@media all and (min-width: 480px) {
 
     body {
 
@@ -400,7 +400,7 @@
 
     .restaurant-card {
 
-        width: 350px;
+        width: 300px;
         position: relative;
         margin: 15px 0px 15px 0px;
         border-radius: 20px;
@@ -436,12 +436,12 @@
 
     .restaurant-card-img {
 
-        width: 350px;
+        width: 300px;
     }
 
     .restaurant-card-img img {
 
-        width: 350px;
+        width: 300px;
         height: 150px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -452,7 +452,7 @@
     .restaurant-bloc {
 
         background-color: white;
-        width: 350px;
+        width: 300px;
         height: 80px;
         margin: -5px 0px 15px 0px;
         display: flex;
