@@ -532,9 +532,63 @@
         }
     }
 
-/* FOOTER */
-    @media all and (min-width: 480px) {
+    /* FOOTER */
     
+@media all and (min-width: 480px) and (max-width: 630px) {
+
+    footer {
+
+        height: 220px;
+        background-color: black;
+        opacity: 80%;
+    }
+
+    footer a {
+
+        color: white;
+        text-decoration: none;
+    }
+
+    footer .header-logo h3 {
+
+        margin-top: 0;
+        padding-left: 25px;
+        padding-top: 20px;
+        font-family: 'Shrikhand', cursive;
+    }
+
+    .footer-bloc-links {
+
+        padding-left: 25px;
+        line-height: 2em;
+    }
+
+    .footer-bloc-link {
+
+        display: flex;
+    }
+
+    .footer-bloc-link h3 {
+
+        margin: 0;
+    }
+
+    .footer-bloc-link i {
+
+        width: 25px;
+        display: flex;
+        align-items: center;
+        color: white;
+        order: -1;
+    }
+
+    .footer-bloc-link .fa-hands-helping {
+
+        font-size: 14px;
+    }
+}
+
+@media all and (min-width: 630px) {
 
     footer {
 
@@ -595,4 +649,5 @@
 
         font-size: 14px;
     }
+    
 }
