@@ -171,7 +171,7 @@
         line-height: 1.5em;
         background-color: white;
         white-space: nowrap;
-        box-shadow: 5px 5px 15px 5px lightgrey; 
+        box-shadow: 5px 5px 15px 5px lightgrey;
         animation: opacity 1s both;  
     }
 
@@ -270,7 +270,7 @@
         border-bottom-right-radius: 15px;
         background-color: #99E2D0; 
         animation: slide 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        transform-origin: right; 
+        transform-origin: right;
     }
 
     @keyframes slide{
@@ -351,6 +351,20 @@
 
         opacity: 85%;
         box-shadow: 1px 1px 15px 1px lightslategray;
+        animation: shadow 0.5s ease-in both;
+    }
+
+    @keyframes shadow {
+
+        0% {
+
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
+
+        100% {
+
+            box-shadow: 0 0 20px 0px lightslategray;
+        }
     }
 
 /* FOOTER */
