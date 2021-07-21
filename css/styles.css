@@ -158,20 +158,21 @@
         margin-top: 20px;
         display: flex;
         justify-content: center;
-        align-items: center;
     }
     
-    .explore input {
+    .explore-text {
 
         width: 220px;
         height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 30px;
         background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
         color: white;
         font-size: 16px;
         font-weight: 600;
         box-shadow: 1px 1px 8px 1px grey; 
-        border: none;
         cursor: pointer;
     }
 
