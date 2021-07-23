@@ -1,14 +1,13 @@
-@media all and (min-width: 300px) and (max-width: 480px) {
+@media all and (min-width: 300px) {
 
     body {
 
         margin: 0;
+        font-family: "Roboto" , sans-serif;
+        
     }
 
-    #bloc-page {
-
-        margin: 10px;
-    }
+    
 
 /* HEADER */
 
@@ -106,23 +105,7 @@
             stroke-opacity: 1;
         }
 
-        25%{
-            transform: scale(1);
-            stroke-opacity: 0.75;
-        }
-        
-        50%{
-            transform: scale(1);
-            stroke-opacity: 0.5;
-        }
-
-        75% {
-            transform: scale(1);
-            stroke-opacity: 0.25;
-        }
-
         100% {
-            transform: scale(1);
             stroke-opacity: 0;
             fill: url(#My-gradient)
         }
@@ -302,7 +285,7 @@
 
         margin: 0;
         padding-left: 10px;
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .menu-1:hover .price{
@@ -321,7 +304,8 @@
     .price p {
 
         padding: 5px;
-        margin-bottom: 8px;         
+        margin-bottom: 8px; 
+        font-size: 14px;        
     }
 
     .order {
