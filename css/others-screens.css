@@ -185,11 +185,11 @@
         color: white;
         font-size: 16px;
         font-weight: 600;
-        box-shadow: 1px 1px 8px 1px grey; 
+        box-shadow: 2px 3px 5px lightgray; 
         cursor: pointer;
     }
 
-    .explore input:hover {
+    .explore-text:hover {
 
         opacity: 85%;
         box-shadow: 1px 1px 15px 1px lightslategray;
