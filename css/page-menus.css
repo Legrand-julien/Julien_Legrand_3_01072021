@@ -334,7 +334,7 @@
         cursor: pointer;
     }
 
-    .order input:hover {
+    .order-text:hover {
 
         opacity: 85%;
         box-shadow: 1px 1px 15px 1px lightslategray;
