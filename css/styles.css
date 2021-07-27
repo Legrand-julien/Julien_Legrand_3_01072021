@@ -123,7 +123,7 @@
         display: flex;
         justify-content: center;
         height: 40px;
-        border-top: inset 3px #f0f0f0;
+        border-top: outset 5px #e0e0e0;
     }
 
     .search-city input {
@@ -355,7 +355,6 @@
         background-color: white;
         width: 280px;
         height: 80px;
-        margin: -5px 0px 15px 0px;
         display: flex;
         justify-content: space-between;
         border-bottom-left-radius: 20px;
